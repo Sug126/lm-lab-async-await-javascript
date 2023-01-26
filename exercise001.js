@@ -20,3 +20,13 @@ promise.then(
     console.log(`Boo. Promise rejected with response: ${error}`);
   }
 );
+
+const getPromiseResponse = async () => {
+  try {
+    const asyncResponse = await promise;
+    console.log(`Yay! Promise resolved with response: ${asyncResponse}`);
+  } catch (error) {
+    console.log(`Boo. Promise rejected with response: ${error}`);
+  }
+};
+getPromiseResponse();
